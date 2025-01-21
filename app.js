@@ -12,15 +12,12 @@ function agregarAmigo() {
     }
 
     amigos.push(nombreAmigo); // Añade el nombre al array
-
-    // Crea un nuevo elemento en la lista visual
     const nuevoElemento = document.createElement('li');
     nuevoElemento.textContent = nombreAmigo;
     listaAmigos.appendChild(nuevoElemento);
 
     inputAmigo.value = ''; // Limpia el campo de texto
 }
-
 // Función para sortear los amigos secretos
 function sortearAmigo() {
     if (amigos.length < 2) {
